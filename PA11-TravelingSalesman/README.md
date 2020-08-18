@@ -40,9 +40,9 @@
 
 RESULTS: Timing experiments for input file big11.mtx:
 -----------------------------------------------------
-heuristic: cost = 3.4, 1 milliseconds
-mine: cost = 1.4, 72 milliseconds
-backtrack: cost = 1.4, 9452 milliseconds
+heuristic: cost = 3.4, 1 milliseconds <br>
+mine: cost = 1.4, 72 milliseconds <br>
+backtrack: cost = 1.4, 9452 milliseconds <br>
 -----------------------------------------------------
 
 EXPLANATION:
