@@ -1,3 +1,42 @@
+/*
+ * AUTHOR: David Anderson
+ * FILE: PA11Main.java
+ * ASSIGNMENT: Programming Assignment 11 - Travelling Salesman
+ * COURSE: CSc 210; Summer 2020
+ * PURPOSE: This program performs three different graph traversal methods to find path in which
+ * a salesman could visit every city (node on the graph) only once. The user can choose between
+ * heuristic, recursive backtracking, or my own customized recursive algorithm. The heuristic option
+ * aims for efficiency only, finding some path quickly but not necessarily finding the optimal path.
+ * The recursive backtracking approach guarantees an optimal path, but will take quite a long time
+ * to do so if the number of cities is large (complexity of O(N!)). My algorithm uses recursive
+ * backtracking with "pruning", eliminating a branch as soon as it exceeds the current minimum
+ * trip total.
+ *
+ * When the user uses the TIME command, the program runs all three strategies back-to-back, and outputs
+ * the cost of the path and the time, in milliseconds, it took to complete that method.
+ *
+ * AVAILABLE COMMANDS:
+ * HEURISTIC, BACKTRACK, MINE, TIME
+ *
+ * USAGE:
+ * java PA11Main inputfile COMMAND
+ *
+ * EXAMPLE INPUT: example.mtx
+ * ----------------------------------------------------------
+ * %%MatrixMarket matrix coordinate real general
+ * 3 3 6
+ * 1 2 1.0
+ * 2 1 2.0
+ * 1 3 3.0
+ * 3 1 4.0
+ * 2 3 5.0
+ * 3 2 6.0
+ * ----------------------------------------------------------
+ *
+ * The program assumes that the input will be properly formatted and that the
+ * input files are located in the working directory.
+ *
+ */
 
 RESULTS: Timing experiments for input file big11.mtx:
 -----------------------------------------------------
